@@ -15,18 +15,10 @@
 #define U_MOUSE_MOVE_TIME 650
 #define U_MOUSE_MOVE_DELAY 0
 
-#define LAYER_C 1
-#define LAYER_P 2
-#define LAYER_M 3
-#define LAYER_G 4
-#define LAYER_U 5
-#define LAYER_L 6
-#define LAYER_H 7
-#define LAYER_O 8
-#define LAYER_Magic 9
-#define LAYER_Symbols 10
-#define LAYER_Num 11
-#define LAYER_Mouse 12
+#define LAYER_Magic 1
+#define LAYER_Symbols 2
+#define LAYER_Num 3
+#define LAYER_Mouse 4layout split keyboard
 
 / {
 behaviors {
@@ -76,90 +68,10 @@ behaviors {
                 default_layer {
                         display-name = "Base";
                         bindings = <
-   &kp X &kp F &kp D &kp_sl P LAYER_P &kp J                              &kp ESC &kp_sl G LAYER_G  &kp_sl O LAYER_O     &kp_sl U LAYER_U   &kp COMMA
-   &hm LCTRL N &hm LALT S &hm LGUI T &kp_sl L LAYER_L &hm LSFT W   &kp Y &kp_sl H LAYER_H  &hm LGUI A     &hm LALT E   &hm LCTRL I 
-   &kp B &kp V &kp K &kp_sl M LAYER_M &kp Q                              &kp Z &kp_sl C LAYER_C  &kp SQT &kp FSLH &kp DOT 
-               &lt LAYER_Mouse TAB &lt LAYER_Symbols R  &kp BSPC                             &lt LAYER_Num RET &hm LSFT SPACE &sk RALT
-                        >;
-                };
-
-                layer_c {
-                        display-name = "C";
-                        bindings = <
-   &trans &kp H &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &kp V &kp F  &trans     &trans   &trans
-   &trans &kp Y &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_p {
-                        display-name = "P";
-                        bindings = <
-   &trans &kp L &trans &trans &trans                              &kp F &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_m {
-                        display-name = "M";
-                        bindings = <
-   &trans &trans &trans &kp V &trans                              &kp F &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &kp P &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_g {
-                        display-name = "G";
-                        bindings = <
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &kp B  &trans     &trans   &trans
-   &kp H &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_u {
-                        display-name = "U";
-                        bindings = <
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &kp E  &trans     &kp H   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_l {
-                        display-name = "L";
-                        bindings = <
-   &trans &trans &trans &kp H &trans                              &kp W &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &kp P  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_h {
-                        display-name = "H";
-                        bindings = <
-   &trans &trans &trans &kp Y &trans                              &kp P &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
-                        >;
-                };
-
-                layer_o {
-                        display-name = "H";
-                        bindings = <
-   &trans &trans &trans &trans &trans                              &kp A &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-   &trans &trans &trans &trans &trans                              &trans &trans  &trans     &trans   &trans
-                  &trans &trans &trans                              &trans &trans &trans
+   &kp B &kp L &kp D &kp W &kp Z                              &kp SQT &kp F &kp O &kp U &kp J
+   &hm LCTRL N &hm LALT R &hm LGUI T &lm LSFT S &hm LSFT G    &kp Y &lm LSFT H &hm LGUI A &hm LALT E &hm LCTRL I 
+   &kp Q &kp X &kp M &kp C &kp V                              &kp K &kp P &kp DOT &kp DOT &kp FSLH  
+               &lt LAYER_Symbols TAB &lt LAYER_Nav R  &kp LSFT    &lt LAYER_Num RET &lt BSPC SPACE &lt NAV
                         >;
                 };
 
