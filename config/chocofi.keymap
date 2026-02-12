@@ -68,10 +68,10 @@ behaviors {
                 default_layer {
                         display-name = "Base";
                         bindings = <
-   &kp B &kp L &kp D &kp W &kp Z                              &kp SQT &kp F &kp O &kp U &kp J
-   &hm LCTRL N &hm LALT R &hm LGUI T &lm LSFT S &hm LSFT G    &kp Y &lm LSFT H &hm LGUI A &hm LALT E &hm LCTRL I 
-   &kp Q &kp X &kp M &kp C &kp V                              &kp K &kp P &kp DOT &kp DOT &kp FSLH  
-               &lt LAYER_Sym TAB &lt LAYER_Nav R  &kp LSFT    &lt LAYER_Num RET &lt BSPC SPACE &lt NAV DEL
+   &kp B       &kp L      &kp D      &kp W      &kp Z          &kp SQT &kp F      &kp O      &kp U      &kp J
+   &hm LCTRL N &hm LALT R &hm LGUI T &lm LSFT S &hm LSFT G     &kp Y   &lm LSFT H &hm LGUI A &hm LALT E &hm LCTRL I 
+   &kp Q       &kp X      &kp M      &kp C      &kp V          &kp K   &kp P      &kp DOT    &kp DOT    &kp FSLH  
+   &lt LAYER_Sym TAB &lt LAYER_Nav R &kp LSFT                          &lt LAYER_Num RET &lt BSPC SPACE &lt LAYER_Nav DEL
                         >;
                 };
 
