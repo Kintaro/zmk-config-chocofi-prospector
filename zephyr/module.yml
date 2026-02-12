@@ -1,4 +1,0 @@
-name: zmk-keyboard-chocofi
-build:
-  settings:
-    board_root: .
