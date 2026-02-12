@@ -15,10 +15,10 @@
 #define U_MOUSE_MOVE_TIME 650
 #define U_MOUSE_MOVE_DELAY 0
 
-#define LAYER_Magic 1
-#define LAYER_Symbols 2
+#define LAYER_Sys 1
+#define LAYER_Sym 2
 #define LAYER_Num 3
-#define LAYER_Mouse 4layout split keyboard
+#define LAYER_Nav 4 
 
 / {
 behaviors {
@@ -71,7 +71,7 @@ behaviors {
    &kp B &kp L &kp D &kp W &kp Z                              &kp SQT &kp F &kp O &kp U &kp J
    &hm LCTRL N &hm LALT R &hm LGUI T &lm LSFT S &hm LSFT G    &kp Y &lm LSFT H &hm LGUI A &hm LALT E &hm LCTRL I 
    &kp Q &kp X &kp M &kp C &kp V                              &kp K &kp P &kp DOT &kp DOT &kp FSLH  
-               &lt LAYER_Symbols TAB &lt LAYER_Nav R  &kp LSFT    &lt LAYER_Num RET &lt BSPC SPACE &lt NAV
+               &lt LAYER_Sym TAB &lt LAYER_Nav R  &kp LSFT    &lt LAYER_Num RET &lt BSPC SPACE &lt NAV
                         >;
                 };
 
@@ -100,7 +100,7 @@ behaviors {
                         bindings = <
    &trans &kp N1 &kp N2 &kp N3 &trans                              &trans &kp EXCL  &kp AT     &kp HASH   &trans
    &trans &kp N4 &kp N5 &kp N6 &trans                              &trans &kp DLLR  &kp PRCNT     &kp CARET   &trans
-   &sl LAYER_Magic &kp N7 &kp N8 &kp N9 &trans                              &trans &kp AMPS  &kp STAR     &kp LPAR   &trans
+   &sl LAYER_Sys &kp N7 &kp N8 &kp N9 &trans                              &trans &kp AMPS  &kp STAR     &kp LPAR   &trans
                   &trans &kp N0 &trans                              &trans &trans &trans
                         >;
                 };
