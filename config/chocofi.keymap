@@ -91,7 +91,7 @@ behaviors {
    &kp ESC &kp LBKT &kp LT &kp RBKT &kp EQUAL                              &trans &trans  &kp UP     &trans   &trans
    &kp GRAVE &kp LPAR &kp SEMI &kp RPAR &kp MINUS                              &trans &kp LEFT  &kp DOWN     &kp RIGHT   &trans
    &kp TILDE &kp LBRC &kp GT &kp RBRC &kp BSLH                              &trans &kp PAGE_DOWN  &trans     &kp PAGE_UP   &trans
-                  &trans &trans &trans                              &trans &trans &kp LSHFT
+                  &trans &kp SQT &trans                              &trans &trans &kp LSHFT
                         >;
                 };
 
